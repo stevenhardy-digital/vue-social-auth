@@ -189,6 +189,28 @@ export default {
         clientId: 'clientId',
         redirectUri: 'redirectUri'
       }
-    }
+    },
+
+    twitch: {
+      name: 'twitch',
+      url: '/auth/twitch',
+      authorizationEndpoint: 'https://id.twitch.tv/oauth2/authorize',
+      redirectUri: window.location.origin,
+      defaultUrlParams: ['response_type', 'client_id', 'redirect_uri'],
+      requiredUrlParams: null,
+      optionalUrlParams: null,
+      scope: null,
+      scopePrefix: null,
+      scopeDelimiter: null,
+      state: null,
+      oauthType: '2.0',
+      popupOptions: null,
+      responseType: 'code',
+      responseParams: {
+        code: 'code',
+        clientId: 'clientId',
+        redirectUri: 'redirectUri'
+      }
+    },
   }
 }
